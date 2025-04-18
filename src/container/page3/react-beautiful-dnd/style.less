@@ -1,0 +1,35 @@
+@pink: #f38181;
+@yellow: #fce38a;
+@yellowgreen: #eaffd0;
+@cyan: #95e1d3;
+@green: #6abe83;
+
+.dnd-layout {
+  width: 100%;
+  height: 500px;
+  // border: 1px solid red;
+
+  .outter-area {
+    background-color: @yellow;
+    height: 500px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+
+    .outter-columns {
+      width: 200px;
+      height: 400px;
+      margin: 10px;
+      background-color: @pink;
+      .outter-column-header {
+        color: @yellowgreen;
+        text-align: center;
+        border-bottom: 3px solid @yellowgreen;
+        height: 40px;
+        line-height: 40px;
+        margin: 0;
+      }
+    }
+  }
+}

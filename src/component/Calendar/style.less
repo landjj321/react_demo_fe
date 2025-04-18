@@ -1,0 +1,131 @@
+.calendar{
+
+    .calendar_header{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        max-width: 1200px;
+        height: 30px;
+        line-height: 30px;
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        border: 1px solid #fff;
+        
+        div{
+            display: flex;
+            align-items: center;
+        }
+
+        .tab{
+            .left{
+                margin-left: 5px;
+            }
+
+            .right{
+                margin-left: 5px;
+            }
+        }
+
+        .title{
+            .year{
+                font-weight: 600;
+            }
+            .month{
+                font-weight: 600;
+            }
+            
+        }
+        .util{
+            .add{
+                margin-right: 5px;
+            }
+            .calendar{
+                margin-right: 5px;
+            }
+            .todolist{
+                margin-right: 5px;
+            }
+        }
+    }
+    ul{
+        padding: 0;
+        overflow: hidden;
+        margin: 0;
+        max-width: 1200px;
+        min-width: 455px;
+
+
+        .tit{
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            min-width: 65px;
+            color: #fff;
+            list-style: none;
+            width: 14.2857%;
+            float: left;
+            border: 1px solid #fff;
+        }
+        
+        li{
+            background: rgba(0, 0, 0, 0.5);
+            box-sizing:border-box;
+        }
+
+        li:nth-of-type(7n+6){
+            border-right: 1px solid #fff;
+        }
+
+
+        li:nth-of-type(7n+7){
+            
+            width: auto;
+            display: block;
+            float: none;
+            margin-left: 85.7142%;
+        }
+
+
+        .day{
+            min-width: 65px;
+            list-style: none;
+            width: 14.2857%;
+            float: left;
+            text-align: right;
+            min-height: 100px;
+            border: 1px solid #fff;
+            color: #fff;
+            .date{
+                margin-bottom: 0;
+                padding-right: 5px;
+                height: 28px;
+            }
+            .today{
+                color: yellowgreen;
+                font-size: 22px;
+            }
+
+
+            .plan{
+                text-align: left;
+                margin-bottom: 3px;
+                background: #fff;
+                border-radius: 4px;
+                color: #999;
+                height: 16px;
+                font-size: 12px;
+                margin-left: 5px;
+                margin-right: 5px;
+                line-height: 16px;
+                padding-left: 3px;
+            }
+            
+        }
+
+        .selected{
+            background: rgba(0, 0, 0, 0.7)!important;
+        }
+
+
+    }
+}

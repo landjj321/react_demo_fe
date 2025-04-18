@@ -1,0 +1,44 @@
+{
+    "compact": false,
+    "presets": [
+        "@babel/preset-react",
+        "@babel/preset-env",
+        "@babel/preset-typescript"
+    ],
+    "sourceMaps": true,
+    "plugins": [
+        "@babel/plugin-transform-runtime",
+        [
+            "@babel/plugin-proposal-decorators",
+            {
+                "legacy": true
+            }
+        ],
+        [
+            "@babel/plugin-proposal-private-methods",
+            {
+                "loose": true
+            }
+        ],
+        [
+            "@babel/plugin-proposal-private-property-in-object",
+            {
+                "loose": true
+            }
+        ],
+        [
+            "@babel/plugin-proposal-class-properties",
+            {
+                "loose": true
+            }
+        ],
+        [
+            "import",
+            {
+                "libraryName": "antd",
+                "libraryDirectory": "es",
+                "style": "css" // `style: true` 会加载 less 文件
+            }
+        ]
+    ]
+}
