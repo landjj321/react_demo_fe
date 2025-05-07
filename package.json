@@ -23,6 +23,7 @@
     "ace-builds": "^1.9.5",
     "ahooks": "^2.9.6",
     "antd": "^4.22.6",
+    "axios": "^1.9.0",
     "bootstrap": "^4.3.1",
     "echarts": "^4.4.0",
     "file-loader": "^4.2.0",

@@ -82,6 +82,13 @@ const routerConfig: IRouter[] = [
         path: '/page2/base64',
         icon: 'icon',
       },
+      {
+        id: 2006,
+        // name 需要和 文件名一致
+        name: 'Music',
+        path: '/page2/music',
+        icon: 'icon',
+      },
     ],
   },
   {
@@ -137,7 +144,7 @@ const routerConfig: IRouter[] = [
         name: 'react-dnd',
         path: '/page3/react-dnd',
         icon: 'chart',
-      }
+      },
     ],
   },
   {
